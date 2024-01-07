@@ -1,1 +1,1 @@
-# myproject-html
+Simple html site using bootstrap
