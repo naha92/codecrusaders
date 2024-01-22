@@ -77,13 +77,29 @@
   --bs-link-hover-color: #1826c2;
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
+
+  .cookie-consent {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
 }
-#cb-cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; border-radius: 0; display: none; }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+.cookie-consent p {
+    margin: 0;
 }
+
+.cookie-consent a {
+    color: #4CAF50;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
