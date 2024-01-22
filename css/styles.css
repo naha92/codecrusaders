@@ -10,6 +10,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -77,29 +78,13 @@
   --bs-link-hover-color: #1826c2;
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
-
-  .cookie-consent {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
 }
 
-.cookie-consent p {
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-
-.cookie-consent a {
-    color: #4CAF50;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
