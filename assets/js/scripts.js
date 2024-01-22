@@ -31,3 +31,25 @@ function showCookieBanner(){
      showCookieBanner();
     }
    }
+   document.addEventListener("DOMContentLoaded", function () {
+    var cookieConsent = document.getElementById("cookieConsent");
+    var acceptCookiesButton = document.getElementById("acceptCookies");
+
+    // Check if the user has previously accepted cookies
+    var cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+    if (!cookiesAccepted) {
+        // If cookies haven't been accepted, show the consent pop-up
+        cookieConsent.style.display = "block";
+
+        // Event listener for accepting cookies
+        acceptCookiesButton.addEventListener("click", function () {
+            // Set a flag in local storage to remember the user's choice
+            localStorage.setItem("cookiesAccepted", "true");
+
+            // Hide the consent pop-up
+            cookieConsent.style.display = "none";
+        });
+    }
+});
+
