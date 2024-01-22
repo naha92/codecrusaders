@@ -10,8 +10,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- #cb-cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; border-radius: 0; display: none; }
-
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -80,7 +78,7 @@
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
 }
-
+#cb-cookie-banner { position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999; border-radius: 0; display: none; }
 *,
 *::before,
 *::after {
